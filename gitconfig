@@ -1,6 +1,6 @@
 [user]
 	name = José Ricardo
-	email = root@josericardo.eti.br
+	email = zehzinho@gmail.com
 [color]
   status = auto
   branch = auto
@@ -9,9 +9,11 @@
 [ui]
   color = auto
 [alias]
-  s = !git status --short
+  sn = !git status --short | nl -w 2 
+  s = !git status --short 
   co = checkout
   ci = commit
+  dc = diff --cached
   # From: https://github.com/garybernhardt/dotfiles/blob/master/.gitconfig
 
   # Fancy logging.
@@ -29,4 +31,8 @@
   l = "!source ~/.githelpers && pretty_git_log"
   la = !git l --all
 [merge]
-  tool = vimdiff
+	tool = opendiff
+[core]
+	whitespace = cr-at-eol
+[http]
+	sslVerify = false
