@@ -5,14 +5,16 @@
   status = auto
   branch = auto
   interactive = auto
-  diff = auto
+	diff = always
 [ui]
   color = auto
 [alias]
+  pullr = !git pull --rebase
   sn = !git status --short | nl -w 2 
   s = !git status --short 
   co = checkout
   ci = commit
+  d = diff --color-words
   dc = diff --cached
   # From: https://github.com/garybernhardt/dotfiles/blob/master/.gitconfig
 
@@ -31,8 +33,10 @@
   l = "!source ~/.githelpers && pretty_git_log"
   la = !git l --all
 [merge]
-	tool = opendiff
+	tool = vimdiff
 [core]
 	whitespace = cr-at-eol
 [http]
 	sslVerify = false
+[push]
+	default = current
