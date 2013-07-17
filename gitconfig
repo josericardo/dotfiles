@@ -14,6 +14,7 @@
   s = !git status --short 
   co = checkout
   ci = commit
+  rh = reset HEAD
   d = diff --color-words
   dc = diff --cached
   # From: https://github.com/garybernhardt/dotfiles/blob/master/.gitconfig
