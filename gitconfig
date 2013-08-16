@@ -12,6 +12,7 @@
   pullr = !git pull --rebase
   sn = !git status --short | nl -w 2 
   s = !git status --short 
+  sno = !git status --short -uno
   co = checkout
   ci = commit
   rh = reset HEAD
@@ -41,3 +42,5 @@
 	sslVerify = false
 [push]
 	default = current
+[commit]
+  template=~/.git.commit.template
