@@ -2,6 +2,7 @@ set -o vi
 
 alias l="ls -l"
 alias la="ls -la"
+alias vv="vim ~/.vimrc"
 
 export PYTHONDONTWRITEBYTECODE=true
 export PYTHONIOENCODING=utf-8
