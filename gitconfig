@@ -14,7 +14,7 @@
   s = !git status --short
   sno = !git status --short -uno
   co = checkout
-  ci = commit
+  ci = commit -v
   rh = reset HEAD
   d = diff --color-words
   dc = diff --cached
