@@ -39,6 +39,7 @@
 	tool = vimdiff
 [core]
 	whitespace = cr-at-eol
+	autocrlf = input
 [http]
 	sslVerify = false
 [push]
