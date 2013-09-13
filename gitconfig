@@ -48,3 +48,5 @@
   template=~/.git.commit.template
 [help]
 	autocorrect = 1
+[github]
+	user = josericardo
