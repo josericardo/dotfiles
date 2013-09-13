@@ -20,6 +20,11 @@ function mvnnotests() { mvn clean install -DskipTests=true; }
 
 # git
 function galn() { git add $(sln $@); }
+alias gau="git add -u"
+
+alias .bert="bundle exec rake test"
+alias .beri="bundle exec rake integration"
+alias .rbash="source ~/.bash_profile"
 
 # thanks to http://en.newinstance.it/2010/05/23/git-autocompletion-and-enhanced-bash-prompt/
 # Set git autocompletion and PS1 integration
