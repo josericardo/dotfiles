@@ -40,8 +40,6 @@ if [ -f /opt/local/etc/bash_completion ]; then
     . /opt/local/etc/bash_completion
 fi
 
-PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
-
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
