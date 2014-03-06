@@ -44,4 +44,5 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # all files under links in ~/bin are added to PATH
+PATH="${PATH}:~/bin"
 export PATH=${PATH}:$(find $HOME/bin -type l | tr '\n' ':' | sed 's/:$//')
