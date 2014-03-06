@@ -1,7 +1,7 @@
 set -o vi
 
-alias l="ls -l"
-alias la="ls -la"
+alias l="ls -lh"
+alias la="ls -lha"
 alias vv="vim ~/.vimrc"
 
 export PYTHONDONTWRITEBYTECODE=true
