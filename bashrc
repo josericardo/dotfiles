@@ -25,6 +25,7 @@ alias gau="git add -u"
 
 alias .bert="bundle exec rake test"
 alias .beri="bundle exec rake integration"
+alias .ber="bundle exec rake"
 alias .rbash="source ~/.bash_profile"
 
 # thanks to http://en.newinstance.it/2010/05/23/git-autocompletion-and-enhanced-bash-prompt/
