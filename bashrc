@@ -46,3 +46,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # all files under links in ~/bin are added to PATH
 PATH="${PATH}:~/bin"
 export PATH=${PATH}:$(find $HOME/bin -type l | tr '\n' ':' | sed 's/:$//')
+
+PYTHONPATH=$PYTHONPATH:~/Sources/local_python_libs:~/Sources/mlpal
+export PYTHONPATH
+export PIP_DOWNLOAD_CACHE=$HOME/.pip_cache
