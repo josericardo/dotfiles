@@ -18,6 +18,7 @@ function psgrep() { ps axu | grep -v grep | grep "$@" -i --color=auto; }
 function killany() { psgrep "$@" | awk ' { print $2 } ' | xargs kill -9; }
 function extgrep() { grep -iR --include=$@ . ; }
 function mvnnotests() { mvn clean install -DskipTests=true; }
+function mvnpkg() { mvn clean package; }
 
 # git
 function galn() { git add $(sln $@); }
