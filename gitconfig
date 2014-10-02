@@ -19,6 +19,8 @@
   rh = reset HEAD
   d = diff --color-words
   dc = diff --cached
+  stash-unstaged = stash --keep-index
+  wcs = whatchanged --stat
   # From: https://github.com/garybernhardt/dotfiles/blob/master/.gitconfig
 
   # Fancy logging.
@@ -35,6 +37,8 @@
   ra = !git r --all
   l = "!source ~/.githelpers && pretty_git_log"
   la = !git l --all
+
+  spp = "!git stash && git pullr && git stash pop"
 [merge]
 	tool = vimdiff
 [core]
