@@ -20,6 +20,10 @@ function extgrep() { grep -iR --include=$@ . ; }
 function mvnnotests() { mvn clean install -DskipTests=true; }
 function mvnpkg() { mvn clean package; }
 
+fh() {
+  $(cat ~/.bash_history | sort -u | selecta)
+}
+
 # git
 function galn() { git add $(sln $@); }
 alias gau="git add -u"
