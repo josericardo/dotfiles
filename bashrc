@@ -15,6 +15,7 @@ shopt -s histappend
 
 function fname() { find . -iname "*$@*"; }
 function psgrep() { ps axu | grep -v grep | grep "$@" -i --color=auto; }
+function pipgrep() { pip freeze | grep "$@" -i --color=auto; }
 function killany() { psgrep "$@" | awk ' { print $2 } ' | xargs kill -9; }
 function extgrep() { grep -iR --include=$@ . ; }
 function mvnnotests() { mvn clean install -DskipTests=true; }
