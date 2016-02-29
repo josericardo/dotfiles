@@ -11,6 +11,13 @@ export MAVEN_OPTS=-Xmx2024m
 export GREP_OPTIONS="--color"
 export HISTSIZE=100000
 
+# prevents commands that start with a space from going into history 
+# also ignore duplicate commands,
+export HISTCONTROL=ignoreboth
+
+export HISTIGNORE='ls:bg:fg:history'
+export PROMPT_COMMAND='history -a'
+
 shopt -s histappend
 
 function fname() { find . -iname "*$@*"; }
