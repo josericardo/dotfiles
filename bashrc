@@ -52,3 +52,6 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip_cache
 
 # Run twolfson/sexy-bash-prompt
 . ~/.bash_prompt
+
+# https://github.com/kennethreitz/autoenv
+source /usr/local/opt/autoenv/activate.sh
