@@ -49,3 +49,6 @@ PATH="${PATH}:~/bin"
 export PATH=${PATH}:$(find $HOME/bin -type l | tr '\n' ':' | sed 's/:$//')
 
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_cache
+
+# Run twolfson/sexy-bash-prompt
+. ~/.bash_prompt
