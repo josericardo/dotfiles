@@ -26,7 +26,7 @@ fh() {
 }
 
 # git
-function sln() { git s | cut -c4- | sed "$1p;$1q" ; }
+function sln() { git s | cut -c4- | sed "$1q;d" ; }
 function galn() { git add $(sln $@); }
 
 # thanks to http://en.newinstance.it/2010/05/23/git-autocompletion-and-enhanced-bash-prompt/
