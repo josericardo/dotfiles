@@ -55,3 +55,6 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip_cache
 
 # https://github.com/kennethreitz/autoenv
 source /usr/local/opt/autoenv/activate.sh
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
