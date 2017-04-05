@@ -20,6 +20,7 @@ shopt -s histappend
 function fname() { find . -iname "*$@*"; }
 function psgrep() { ps axu | grep -v grep | grep "$@" -i --color=auto; }
 function pipgrep() { pip freeze | grep "$@" -i --color=auto; }
+function usevenv() { source ~/.python-venvs/$1/bin/activate ; }
 
 fh() {
   $(cat ~/.bash_history | sort -u | selecta)
