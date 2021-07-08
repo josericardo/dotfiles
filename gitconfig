@@ -15,6 +15,7 @@
   sno = !git status --short -uno
   co = checkout
   ci = commit -v
+  g = grep -i
   cia = commit -v --amend
   rh = reset HEAD
   d = diff --color-words
@@ -40,8 +41,10 @@
   la = !git l --all
 
   spp = "!git stash && git pullr && git stash pop"
-  contrib-hist = "!git shortlog -s -n"
+  contrib-hist = "!git shortlog -s -n -e"
   set-upstream = !git branch -u origin/$(git symbolic-ref --short HEAD)
+  pushup = !git push upstream
+  pullup = !git pullr upstream
 [merge]
 	tool = vimdiff
 [grep]
