@@ -124,3 +124,6 @@ PATH="$PATH:$HOME/.mix/escripts"
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+export PATH=~/.asdf/shims:$PATH
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
