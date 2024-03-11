@@ -45,6 +45,7 @@
   set-upstream = !git branch -u origin/$(git symbolic-ref --short HEAD)
   pushup = !git push upstream
   pullup = !git pullr upstream
+  pfn = !git push --force --no-verify
 [merge]
 	tool = vimdiff
 [grep]
@@ -63,4 +64,4 @@
 [github]
 	user = josericardo
 [rerere]
-  enabled = 1
+  enabled = 0
